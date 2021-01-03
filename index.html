@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<!-- icons -->
+	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+	<!-- terminal effect -->
+    <script src="js/t.min.js"></script>
+
+	<!-- for on scroll animations -->
+    <link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+	  
+    <title>leo frati</title>
+</head>
+<body>
+
+	  <!--------------- navbar starts here --------------->
+	  <nav>
+		<span id="brand">
+			  <a href="index.html">leo frati</a>
+		</span>
+
+		<ul id="menu">
+			  <li><a href="portfolio.html">portfolio<span>.</span></a></li>
+			  <li><a href="about.html">à propos<span>.</span></a></li>
+			  <li><a href="contact.html">contact<span>.</span></a></li>
+		</ul>
+
+		<div id="toggle">
+			  <div class="span">menu</div>
+		</div>
+
+  	</nav>
+
+   <div id="resize">
+	 	<div class="close-btn">close</div>
+		<ul id="menu">
+			<li><a href="work.html">portfolio<span>.</span></a></li>
+			<li><a href="about.html">à propos<span>.</span></a></li>
+			<li><a href="contact.html">contact<span>.</span></a></li>
+		</ul>
+   </div>
+    <!--------------- navbar ends here --------------->
+
+	<!--------------- hero banner starts here --------------->
+
+   	<div class="main-container">
+		<div class="main-content-container">
+			<div class="left-content-container">
+				<h1>salut,<br> 
+					je m'appelle léo</h1>
+					<h2>Freelance à <strong>Bordeaux</strong></h2>
+					<div class="btn-banner-container">
+						<button>Portfolio</button>
+						<button>Contact</button>
+					</div>
+			</div>
+			<div class="right-content-container">
+				<div class="img-banner-container"></div>
+			</div>
+		</div>
+	</div>
+
+	   
+	<!--------------- hero banner ends here --------------->
+
+	<!--------------- media start here --------------->
+	<div class="media">
+		<ul>
+			  <li><a href="https://www.facebook.com/oel.leo.4"><ion-icon name="logo-facebook"></ion-icon></a></li>
+			  <li><a href href="https://www.instagram.com/salutcest.leo/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+			  <li><a href href="https://www.linkedin.com/in/leofrati/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+			  <li><a href href="http://www.leofrati.com"><ion-icon name="logo-behance"></ion-icon></a></li>
+		</ul>
+  </div>
+  <!--------------- media ends here --------------->
+
+	<!--SCRIPT-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="js/hover-effect.umd.js"></script>
+	<script src="js/main.js"></script>
+	<!-- greensock cdn -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+
+	// navigation starts here
+
+		$("#toggle").click(function() {
+			$(this).toggleClass('on');
+			$("#resize").toggleClass("active");
+		});
+
+		$("#resize ul li a").click(function() {
+			$(this).toggleClass('on');
+			$("#resize").toggleClass("active");
+		});
+
+		$(".close-btn").click(function() {
+			$(this).toggleClass('on');
+			$("#resize").toggleClass("active");
+		});
+
+	// navigation ends here
+
+
+</script>
+</body>
+</html>
